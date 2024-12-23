@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seavolk Logistics</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/srticels.css">
+    <link rel="stylesheet" href="/css/all-articles.css">
+</head>
+<body>
+    <div class="modal-window">
+        <div class="modal-window__body">
+            <form action="#">
+                <div class="text-wrapper">
+                    <h4 class="secound-title">Ask your question</h4>
+                    <p>We will reply to you within a few hours</p>                            
+                </div>
+
+                <div class="inpits-wrap">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="twoo_input">
+                    <div class="inpits-wrap">
+                        <label for="phone">Phone</label>
+                        <input type="number" id="phone" placeholder="3(333)33-32-231">
+                    </div>
+                    <div class="inpits-wrap">
+                        <label for="mail">E-mail</label>
+                        <input type="mail" id="mail" placeholder="Your mail...">
+                    </div>
+                </div>
+                <div class="inpits-wrap">
+                    <label for="question">Question</label>
+                    <textarea type="text" id="question" placeholder="Write your question..."></textarea>
+                </div>
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Contact me only by EMAIL
+                </label>
+                <button type="submit" class="btn">Send</button>
+            </form>            
+        </div>
+
+        <div class="modal-window__close"></div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo-wrap">
+                    <a href="/">
+                        <img src="./img/icon/logo.png" alt="Seavolk">
+                    </a>                    
+                </div>
+                <div class="header-top__right">
+                    <div class="header-top__right__contacts">
+                        <span class="time-work">9AM - 5PM / New York </span>
+                        <div class="header-top__right__contacts__links">
+                            <a href="tel:+8802209034">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.65471 1.16883C8.65471 0.991728 8.72506 0.82188 8.85029 0.69665C8.97552 0.57142 9.14536 0.501066 9.32246 0.501066C11.0929 0.503011 12.7902 1.20717 14.042 2.45905C15.2939 3.71093 15.9981 5.40828 16 7.1787C16 7.3558 15.9296 7.52565 15.8044 7.65088C15.6792 7.77611 15.5093 7.84647 15.3322 7.84647C15.1551 7.84647 14.9853 7.77611 14.8601 7.65088C14.7348 7.52565 14.6645 7.3558 14.6645 7.1787C14.6629 5.76237 14.0996 4.40451 13.0981 3.40302C12.0966 2.40152 10.7388 1.83818 9.32246 1.83659C9.14536 1.83659 8.97552 1.76624 8.85029 1.64101C8.72506 1.51578 8.65471 1.34593 8.65471 1.16883ZM9.32246 4.50765C10.0309 4.50765 10.7102 4.78906 11.2112 5.28998C11.7121 5.7909 11.9935 6.47029 11.9935 7.1787C11.9935 7.3558 12.0638 7.52565 12.1891 7.65088C12.3143 7.77611 12.4841 7.84647 12.6612 7.84647C12.8383 7.84647 13.0082 7.77611 13.1334 7.65088C13.2586 7.52565 13.329 7.3558 13.329 7.1787C13.3279 6.11642 12.9055 5.09794 12.1543 4.34679C11.4032 3.59564 10.3847 3.17318 9.32246 3.17212C9.14536 3.17212 8.97552 3.24247 8.85029 3.3677C8.72506 3.49293 8.65471 3.66278 8.65471 3.83988C8.65471 4.01699 8.72506 4.18683 8.85029 4.31206C8.97552 4.43729 9.14536 4.50765 9.32246 4.50765ZM15.3943 11.6788C15.7813 12.0668 15.9986 12.5925 15.9986 13.1405C15.9986 13.6885 15.7813 14.2142 15.3943 14.6022L14.7867 15.3027C9.31779 20.5386 -3.99055 7.23346 1.16451 1.74711L1.93243 1.07935C2.32091 0.703183 2.84186 0.495089 3.38259 0.500088C3.92332 0.505087 4.44034 0.722776 4.8218 1.10606C4.8425 1.12676 6.07985 2.73407 6.07985 2.73407C6.447 3.11979 6.65138 3.63216 6.65051 4.16469C6.64964 4.69721 6.44358 5.20891 6.07517 5.59343L5.30192 6.56569C5.72984 7.60548 6.35901 8.55045 7.15327 9.34633C7.94753 10.1422 8.89122 10.7733 9.93012 11.2033L10.9084 10.4254C11.2929 10.0572 11.8045 9.85142 12.3369 9.85068C12.8693 9.84993 13.3814 10.0543 13.767 10.4214C13.767 10.4214 15.3736 11.6581 15.3943 11.6788ZM14.4755 12.6497C14.4755 12.6497 12.8776 11.4203 12.8569 11.3996C12.7193 11.2632 12.5334 11.1867 12.3397 11.1867C12.146 11.1867 11.9601 11.2632 11.8225 11.3996C11.8045 11.4183 10.4576 12.4914 10.4576 12.4914C10.3669 12.5637 10.2589 12.611 10.1442 12.6288C10.0296 12.6466 9.91231 12.6343 9.80391 12.5929C8.45803 12.0918 7.23555 11.3073 6.2193 10.2925C5.20304 9.27776 4.41674 8.05643 3.91365 6.71127C3.86905 6.60139 3.8545 6.48162 3.87152 6.36426C3.88854 6.2469 3.9365 6.13619 4.01048 6.0435C4.01048 6.0435 5.08356 4.69596 5.10159 4.6786C5.23799 4.54103 5.31452 4.35514 5.31452 4.16141C5.31452 3.96768 5.23799 3.7818 5.10159 3.64423C5.08089 3.6242 3.85155 2.0249 3.85155 2.0249C3.71193 1.8997 3.5297 1.83265 3.34222 1.83749C3.15475 1.84233 2.97622 1.9187 2.84325 2.05095L2.07533 2.71871C-1.69214 7.24882 9.84064 18.142 13.8104 14.3905L14.4188 13.6894C14.5613 13.5574 14.6469 13.3751 14.6575 13.181C14.6681 12.987 14.6028 12.7965 14.4755 12.6497Z" fill="#1E3667" style="fill:#1E3667;fill:color(display-p3 0.1176 0.2118 0.4039);fill-opacity:1;"/>
+                                </svg>
+                                +(880) 220 90 34
+                            </a>
+                            <a href="mailto:project@seavolk.com">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.6667 0.5H3.33333C2.4496 0.50101 1.60237 0.836561 0.97748 1.43305C0.352588 2.02954 0.00105857 2.83826 0 3.68182L0 11.3182C0.00105857 12.1617 0.352588 12.9705 0.97748 13.567C1.60237 14.1634 2.4496 14.499 3.33333 14.5H12.6667C13.5504 14.499 14.3976 14.1634 15.0225 13.567C15.6474 12.9705 15.9989 12.1617 16 11.3182V3.68182C15.9989 2.83826 15.6474 2.02954 15.0225 1.43305C14.3976 0.836561 13.5504 0.50101 12.6667 0.5ZM3.33333 1.77273H12.6667C13.0659 1.77348 13.4557 1.88824 13.786 2.10224C14.1163 2.31624 14.3719 2.61969 14.52 2.97355L9.41467 7.84745C9.03895 8.20465 8.53028 8.40521 8 8.40521C7.46972 8.40521 6.96105 8.20465 6.58533 7.84745L1.48 2.97355C1.6281 2.61969 1.88374 2.31624 2.21403 2.10224C2.54432 1.88824 2.93414 1.77348 3.33333 1.77273ZM12.6667 13.2273H3.33333C2.8029 13.2273 2.29419 13.0261 1.91912 12.6681C1.54405 12.3101 1.33333 11.8245 1.33333 11.3182V4.63636L5.64267 8.74727C6.26842 9.34307 7.11617 9.67766 8 9.67766C8.88383 9.67766 9.73158 9.34307 10.3573 8.74727L14.6667 4.63636V11.3182C14.6667 11.8245 14.456 12.3101 14.0809 12.6681C13.7058 13.0261 13.1971 13.2273 12.6667 13.2273Z" fill="#1E3667" style="fill:#1E3667;fill:color(display-p3 0.1176 0.2118 0.4039);fill-opacity:1;"/>
+                                </svg>
+                                project@seavolk.com
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-arrow">
+                        <span class="btn">
+                           GET A QUOTE 
+                        </span>
+                        <span class="arrows">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.064 0.0528181L6.77181 0.119196C6.69281 0.120871 6.61413 0.138175 6.54031 0.170109C6.46649 0.202044 6.399 0.247977 6.34171 0.30526C6.28443 0.362542 6.2385 0.430039 6.20656 0.503859C6.17463 0.577678 6.15732 0.656358 6.15565 0.735359C6.15212 0.893464 6.21131 1.04338 6.32028 1.15235C6.42926 1.26133 6.57917 1.32052 6.73728 1.31699L9.76291 1.25313L0.915324 10.1007C0.800242 10.2158 0.733333 10.3696 0.729317 10.5284C0.7253 10.6871 0.784506 10.8377 0.893908 10.9471C1.00331 11.0565 1.15395 11.1157 1.31268 11.1117C1.47142 11.1077 1.62525 11.0408 1.74033 10.9257L10.614 2.05209L10.5323 5.11201C10.53 5.19103 10.5433 5.26893 10.5716 5.34123C10.5998 5.41353 10.6424 5.47879 10.6968 5.53324C10.7513 5.5877 10.8165 5.63027 10.8888 5.65851C10.9611 5.68675 11.039 5.70009 11.1181 5.69777C11.1971 5.69609 11.2757 5.67879 11.3496 5.64685C11.4234 5.61492 11.4909 5.56898 11.5482 5.5117C11.6054 5.45442 11.6514 5.38692 11.6833 5.3131C11.7152 5.23928 11.7325 5.1606 11.7342 5.0816L11.813 1.80183C11.8247 1.32602 11.6471 0.874563 11.3192 0.546622C10.9912 0.218681 10.5398 0.0410755 10.064 0.0528181Z" fill="#0F0F0F" style="fill:#0F0F0F;fill:color(display-p3 0.0588 0.0588 0.0588);fill-opacity:1;"/>
+                            </svg>      
+                        </span>  
+                    </a>
+                </div>
+                <div class="burger-menu" id="burgerMenu">
+                    <div class="burger-menu_line-1"></div>
+                    <div class="burger-menu_line-2"></div>
+                    <div class="burger-menu_line-3"></div>
+                </div>
+            </div>            
+        </div>
+        <div class="header-bottom">
+            <ul>
+                <li>
+                    <a href="all-services.html" class="services-menu">Services
+                        <img src="./img/icon/arrow-white.svg" alt="">
+                    </a>
+                    <div class="show_menu">
+                        <div class="col">
+                            <div class="title_col">SOLUTIONS</div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/icon/services/menu/Ocean Freight.svg" alt="">
+                                        Ocean Freight
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/icon/services/menu/Ocean Freight.svg" alt="">
+                                        Ocean Freight
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="title_col">SOLUTIONS</div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/icon/services/menu/Ocean Freight.svg" alt="">
+                                        Ocean Freight
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/icon/services/menu/Ocean Freight.svg" alt="">
+                                        Ocean Freight
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col col-3">
+                            <div class="title_col">SOLUTIONS</div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/icon/services/menu/Ocean Freight.svg" alt="">
+                                        Ocean Freight
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/icon/services/menu/Ocean Freight.svg" alt="">
+                                        Ocean Freight
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Company
+                        <img src="./img/icon/arrow-white.svg" alt="">
+                    </a>
+                    <div class="show_menu">
+                        <div class="col">
+                            <div class="title_col">SOLUTIONS</div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/icon/services/menu/AboutUs.svg" alt="About Us">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/icon/services/menu/Contacts.svg" alt="Contacts">
+                                        Contacts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/icon/services/menu/Careers.svg" alt="Contacts">
+                                        Careers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/icon/services/menu/Getaquote.svg" alt="Contacts">
+                                        Get a quote
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="mobile-menu">
+            <div class="header-top__right__contacts">
+                <span class="time-work">9AM - 5PM / New York </span>
+                <div class="header-top__right__contacts__links">
+                    <a href="tel:+8802209034">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.65471 1.16883C8.65471 0.991728 8.72506 0.82188 8.85029 0.69665C8.97552 0.57142 9.14536 0.501066 9.32246 0.501066C11.0929 0.503011 12.7902 1.20717 14.042 2.45905C15.2939 3.71093 15.9981 5.40828 16 7.1787C16 7.3558 15.9296 7.52565 15.8044 7.65088C15.6792 7.77611 15.5093 7.84647 15.3322 7.84647C15.1551 7.84647 14.9853 7.77611 14.8601 7.65088C14.7348 7.52565 14.6645 7.3558 14.6645 7.1787C14.6629 5.76237 14.0996 4.40451 13.0981 3.40302C12.0966 2.40152 10.7388 1.83818 9.32246 1.83659C9.14536 1.83659 8.97552 1.76624 8.85029 1.64101C8.72506 1.51578 8.65471 1.34593 8.65471 1.16883ZM9.32246 4.50765C10.0309 4.50765 10.7102 4.78906 11.2112 5.28998C11.7121 5.7909 11.9935 6.47029 11.9935 7.1787C11.9935 7.3558 12.0638 7.52565 12.1891 7.65088C12.3143 7.77611 12.4841 7.84647 12.6612 7.84647C12.8383 7.84647 13.0082 7.77611 13.1334 7.65088C13.2586 7.52565 13.329 7.3558 13.329 7.1787C13.3279 6.11642 12.9055 5.09794 12.1543 4.34679C11.4032 3.59564 10.3847 3.17318 9.32246 3.17212C9.14536 3.17212 8.97552 3.24247 8.85029 3.3677C8.72506 3.49293 8.65471 3.66278 8.65471 3.83988C8.65471 4.01699 8.72506 4.18683 8.85029 4.31206C8.97552 4.43729 9.14536 4.50765 9.32246 4.50765ZM15.3943 11.6788C15.7813 12.0668 15.9986 12.5925 15.9986 13.1405C15.9986 13.6885 15.7813 14.2142 15.3943 14.6022L14.7867 15.3027C9.31779 20.5386 -3.99055 7.23346 1.16451 1.74711L1.93243 1.07935C2.32091 0.703183 2.84186 0.495089 3.38259 0.500088C3.92332 0.505087 4.44034 0.722776 4.8218 1.10606C4.8425 1.12676 6.07985 2.73407 6.07985 2.73407C6.447 3.11979 6.65138 3.63216 6.65051 4.16469C6.64964 4.69721 6.44358 5.20891 6.07517 5.59343L5.30192 6.56569C5.72984 7.60548 6.35901 8.55045 7.15327 9.34633C7.94753 10.1422 8.89122 10.7733 9.93012 11.2033L10.9084 10.4254C11.2929 10.0572 11.8045 9.85142 12.3369 9.85068C12.8693 9.84993 13.3814 10.0543 13.767 10.4214C13.767 10.4214 15.3736 11.6581 15.3943 11.6788ZM14.4755 12.6497C14.4755 12.6497 12.8776 11.4203 12.8569 11.3996C12.7193 11.2632 12.5334 11.1867 12.3397 11.1867C12.146 11.1867 11.9601 11.2632 11.8225 11.3996C11.8045 11.4183 10.4576 12.4914 10.4576 12.4914C10.3669 12.5637 10.2589 12.611 10.1442 12.6288C10.0296 12.6466 9.91231 12.6343 9.80391 12.5929C8.45803 12.0918 7.23555 11.3073 6.2193 10.2925C5.20304 9.27776 4.41674 8.05643 3.91365 6.71127C3.86905 6.60139 3.8545 6.48162 3.87152 6.36426C3.88854 6.2469 3.9365 6.13619 4.01048 6.0435C4.01048 6.0435 5.08356 4.69596 5.10159 4.6786C5.23799 4.54103 5.31452 4.35514 5.31452 4.16141C5.31452 3.96768 5.23799 3.7818 5.10159 3.64423C5.08089 3.6242 3.85155 2.0249 3.85155 2.0249C3.71193 1.8997 3.5297 1.83265 3.34222 1.83749C3.15475 1.84233 2.97622 1.9187 2.84325 2.05095L2.07533 2.71871C-1.69214 7.24882 9.84064 18.142 13.8104 14.3905L14.4188 13.6894C14.5613 13.5574 14.6469 13.3751 14.6575 13.181C14.6681 12.987 14.6028 12.7965 14.4755 12.6497Z" fill="#1E3667" style="fill:#1E3667;fill:color(display-p3 0.1176 0.2118 0.4039);fill-opacity:1;"/>
+                        </svg>
+                        +(880) 220 90 34
+                    </a>
+                    <a href="mailto:project@seavolk.com">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6667 0.5H3.33333C2.4496 0.50101 1.60237 0.836561 0.97748 1.43305C0.352588 2.02954 0.00105857 2.83826 0 3.68182L0 11.3182C0.00105857 12.1617 0.352588 12.9705 0.97748 13.567C1.60237 14.1634 2.4496 14.499 3.33333 14.5H12.6667C13.5504 14.499 14.3976 14.1634 15.0225 13.567C15.6474 12.9705 15.9989 12.1617 16 11.3182V3.68182C15.9989 2.83826 15.6474 2.02954 15.0225 1.43305C14.3976 0.836561 13.5504 0.50101 12.6667 0.5ZM3.33333 1.77273H12.6667C13.0659 1.77348 13.4557 1.88824 13.786 2.10224C14.1163 2.31624 14.3719 2.61969 14.52 2.97355L9.41467 7.84745C9.03895 8.20465 8.53028 8.40521 8 8.40521C7.46972 8.40521 6.96105 8.20465 6.58533 7.84745L1.48 2.97355C1.6281 2.61969 1.88374 2.31624 2.21403 2.10224C2.54432 1.88824 2.93414 1.77348 3.33333 1.77273ZM12.6667 13.2273H3.33333C2.8029 13.2273 2.29419 13.0261 1.91912 12.6681C1.54405 12.3101 1.33333 11.8245 1.33333 11.3182V4.63636L5.64267 8.74727C6.26842 9.34307 7.11617 9.67766 8 9.67766C8.88383 9.67766 9.73158 9.34307 10.3573 8.74727L14.6667 4.63636V11.3182C14.6667 11.8245 14.456 12.3101 14.0809 12.6681C13.7058 13.0261 13.1971 13.2273 12.6667 13.2273Z" fill="#1E3667" style="fill:#1E3667;fill:color(display-p3 0.1176 0.2118 0.4039);fill-opacity:1;"/>
+                        </svg>
+                        project@seavolk.com
+                    </a>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="services-menu">Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Company
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>
+    </div>
+    <div class="mobile-menu-bottom">
+        <a href="tel:+8802209034">
+            <img src="./img/icon/mobile-phone.svg" alt="phone">
+        </a>
+        <div class="line"></div>
+        <a href="#">
+            <img src="./img/icon/mobile-get-aQguote.svg" alt="get a quote">
+        </a>
+        <div class="line"></div>
+        <div class="callback">
+            <img src="./img/icon/mobile-call.svg" alt="callback">
+        </div>
+    </div>
+    <main class="main">
+        <section class="services section services-pag">
+            <div class="container">
+                <h2 class="s-t box">Projects</h2>
+                <div class="crumbs-date">
+                    <div class="crumbs-wrapp">
+                        <a href="/">Home</a>
+                        <div>Projects</div>
+                    </div>   
+                </div>
+                <div class="projects-wrapp-all">
+                    <div class="projects-card">
+                        <div class="projects-card__text">
+                            <h4><a href="articles-project.html">Construction Equipment Shipping Projects</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                        </div>
+    
+                        <div class="projects-card__image-wrapper">
+                            <img src="/img/image/truck-vehicle-with-trailers-background 2.webp" alt="sevolk">
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-card__text">
+                            <h4><a href="articles-project.html">Construction Equipment Shipping Projects</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                        </div>
+    
+                        <div class="projects-card__image-wrapper">
+                            <img src="/img/image/truck-vehicle-with-trailers-background 2.webp" alt="sevolk">
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-card__text">
+                            <h4><a href="articles-project.html">Construction Equipment Shipping Projects</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                        </div>
+    
+                        <div class="projects-card__image-wrapper">
+                            <img src="/img/image/truck-vehicle-with-trailers-background 2.webp" alt="sevolk">
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-card__text">
+                            <h4><a href="articles-project.html">Construction Equipment Shipping Projects</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                        </div>
+    
+                        <div class="projects-card__image-wrapper">
+                            <img src="/img/image/truck-vehicle-with-trailers-background 2.webp" alt="sevolk">
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-card__text">
+                            <h4><a href="articles-project.html">Construction Equipment Shipping Projects</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                        </div>
+    
+                        <div class="projects-card__image-wrapper">
+                            <img src="/img/image/truck-vehicle-with-trailers-background 2.webp" alt="sevolk">
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-card__text">
+                            <h4><a href="articles-project.html">Construction Equipment Shipping Projects</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                        </div>
+    
+                        <div class="projects-card__image-wrapper">
+                            <img src="/img/image/truck-vehicle-with-trailers-background 2.webp" alt="sevolk">
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-card__text">
+                            <h4><a href="articles-project.html">Construction Equipment Shipping Projects</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                        </div>
+    
+                        <div class="projects-card__image-wrapper">
+                            <img src="/img/image/truck-vehicle-with-trailers-background 2.webp" alt="sevolk">
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-card__text">
+                            <h4><a href="articles-project.html">Construction Equipment Shipping Projects</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                        </div>
+    
+                        <div class="projects-card__image-wrapper">
+                            <img src="/img/image/truck-vehicle-with-trailers-background 2.webp" alt="sevolk">
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-card__text">
+                            <h4><a href="articles-project.html">Construction Equipment Shipping Projects</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                        </div>
+    
+                        <div class="projects-card__image-wrapper">
+                            <img src="/img/image/truck-vehicle-with-trailers-background 2.webp" alt="sevolk">
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-card__text">
+                            <h4><a href="articles-project.html">Construction Equipment Shipping Projects</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                        </div>
+    
+                        <div class="projects-card__image-wrapper">
+                            <img src="/img/image/truck-vehicle-with-trailers-background 2.webp" alt="sevolk">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="black-bg footer">
+        <div class="container">
+            <div class="footer-logo-wrapp">
+                <div class="footer-logo-wrapp__icon">
+                    <img src="./img/icon/logo5_Transparency_White 1.png" alt="">
+                </div>
+                <div class="footer-logo-wrapp__line">
+                </div>
+            </div>
+            <div class="footer-link-wrapp">
+                <ul>
+                    <li class="footer-link-wrapp__title">
+                        Pages
+                    </li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-link-wrapp__title">
+                        SOLUTIONS
+                    </li>
+                    <li><a href="#">Ocean Freight</a></li>
+                    <li><a href="#">RORO</a></li>
+                    <li><a href="#">Out of Gauge</a></li>
+                    <li><a href="#">Reefer Shipping</a></li>
+                    <li><a href="#">Breakbulk Shipping</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-link-wrapp__title">
+                        INDUSTRIES
+                    </li>
+                    <li><a href="#">Agricultural Equipment</a></li>
+                    <li><a href="#">Construction Equipment</a></li>
+                    <li><a href="#">Industrial Equipment</a></li>
+                    <li><a href="#">Energy Equipment</a></li>
+                    <li><a href="#">AbouOil and Gas Equipmentt</a></li>
+                </ul>
+                <div class="footer-link-wrapp__contact">
+                    <form action="#">
+                        <input type="text" placeholder="Search">
+                    </form>
+                    <div class="footer-link-wrapp__contact__wrapp">
+                        <a href="tel:+8802209034" class="footer-number">+(880) 220 90 34</a>
+                        <a href="mailto:project@seavolk.com" class="footer-mail">project@seavolk.com</a>
+                        <a href="#" class="download">Download the presentation</a>
+                        <div class="footer-link-wrapp__contact__wrapp__messenger">
+                            <a href="#"><img src="./img/icon/wathsap.svg" alt=""></a>
+                            <a href="#"><img src="./img/icon/inst.svg" alt=""></a>
+                            <a href="#"><img src="./img/icon/fb.svg" alt=""></a>
+                            <a href="#"><img src="./img/icon/telegramm.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="footer-policy-wrapp">
+                <div class="footer-policy-wrapp__policy">
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="copyright">2024 © Seavolk</div>
+            </div>
+        </div>
+    </footer>
+<script src="/js/parallax.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

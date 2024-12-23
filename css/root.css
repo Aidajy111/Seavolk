@@ -1,0 +1,159 @@
+    html{
+    scroll-behavior: smooth;
+    }
+  /* Подключение шрифтов */
+    @font-face {
+        font-family: "Montserrat";
+        src: url('../fonts/montserrat/Montserrat-Regular.ttf') format('woff2');
+        font-weight: 400; /* Regular */
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 300;
+        src: url("../fonts/montserrat/Montserrat-Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        src: url("../fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+    }
+    @font-face {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      src: url("../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Nobile";
+        font-style: normal;
+        font-weight: 700;
+        src: url("../fonts/nobile/Nobile-Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Nobile";
+        font-style: normal;
+        font-weight: 400;
+        src: url("../fonts/nobile/Nobile-Regular.ttf") format("truetype");
+    }
+  
+    
+    :root {
+    /* Переменные цветов */    
+        --main-white-bg: #F1F1F1;
+        --main-dark-color: #0F0F0F;
+        --main-akcent-color-blue-dark: #1E3667;
+        --support-blue-color: #0F4FD0;
+        --description-text-in-dark: #AEAEAE;
+        --description-text-in-white: #585858;
+        --main-input-bg: #262626;
+        
+      /* font size */
+      --title-h1: 52px;
+      --title-h2: 30px;
+      --font-size-text-20: 20px;
+      --font-size-text-15: 15px;
+      --font-size-text-12: 12px;
+
+      /* margin */
+      --margin-120: 120px;
+      --margin-60: 60px;
+      --margin-30: 30px;
+
+      --space-width-370-px: 370px;
+      --space-height-257-px: 257px;
+    }
+  
+    
+    /* Обнуление стилей */
+    p,
+    span,
+    a,
+    div,
+    ul,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    button {
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat", Helvetica, sans-serif;
+      font-weight: 400;
+      transition: 0.7s;
+    }
+    a {
+      text-decoration: none;
+    }
+    *, *:before, *:after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  ul li {
+    list-style: none;
+  }
+  
+  /* Стили для прелоадера */
+  
+  html, body {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: var(--size-20-px);
+  }
+
+@media only screen and (max-width: 1080px) {
+  :root {
+        
+      /* font size */
+      --title-h1: 35px;
+      --title-h2: 25px;
+      --font-size-text-20: 15px;
+      --font-size-text-15: 12px;
+      --font-size-text-12: 10px;
+
+      /* margin */
+      --margin-120: 60px;
+      --margin-60: 30px;
+      --margin-30: 15px;
+
+      --space-width-370-px: 360px;
+      --space-height-257-px: 257px;
+    }
+}
+
+@media (max-width: 575px) {
+  :root {
+        
+    /* font size */
+    --title-h1: 25px;
+    --title-h2: 20px;
+    --font-size-text-20: 12px;
+    --font-size-text-15: 12px;
+    --font-size-text-12: 10px;
+
+    /* margin */
+    --margin-120: 60px;
+    --margin-60: 15px;
+    --margin-30: 15px;
+
+    --space-width-370-px: 360px;
+    --space-height-257-px: 203px;
+  }
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}

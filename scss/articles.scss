@@ -1,0 +1,210 @@
+.crumbs-wrapp {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    a {
+        color:  var(--main-akcent-color-blue-dark);
+        font-size: var(--font-size-text-15);
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+        &::after {
+            content: "";
+            width: 16px;    
+            height: 1px;
+            background: var(--description-text-in-dark);
+        }
+    }
+    div {
+        color: var(--description-text-in-dark);
+        font-size: var(--font-size-text-15);
+    }
+}
+.crumbs-date {
+    display: flex;
+    justify-content: space-between;
+    width: 770px;
+    .date {
+        color: var(--description-text-in-white);
+        font-size: var(--font-size-text-15);
+    }
+}
+.article {
+    .crumbs-date {
+        margin-top: var(--margin-30);
+    }
+}
+// Стили для текста статьи
+article {
+    margin-top: var(--margin-60);
+    width: 770px;
+    p {
+        font-size: var(--font-size-text-20);
+        color: var(--description-text-in-white);
+        font-weight: 400;
+    }
+    div, p, h2, h3, h4, span, a, ul, li {
+        line-height: 40px;
+        margin-bottom: var(--margin-30);
+        font-family: "Montserrat";
+    }
+    h2 {
+        font-size: var(--title-h2);
+        color: var(--main-dark-color);
+    }
+    img {
+        max-width: 100%;
+        margin-bottom: var(--margin-30);
+    }
+}
+.projects-wrapp-articles {
+    display: flex;
+    gap: 30px;
+}
+.projects-articles {
+    .get-a-quote-bottom-text-block {
+        margin: 30px auto 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+.roadmap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 30px;
+    &::after {
+        content: "";
+        height: 90%;
+        width: 4px;
+        background: var(--description-text-in-dark);
+        display: block;
+        position: absolute;
+        left: 218px;
+        z-index: -1;
+        top: 13px;
+    }
+  }
+  
+  .roadmap-item {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    align-items: start;
+    gap: 30px;
+  }
+  
+  .circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--main-white-bg);
+    border: 2px solid var(--main-akcent-color-blue-dark);
+    box-sizing: content-box;
+  }
+
+  .roadmap-item:first-child {
+    .circle {
+        background-color: var(--main-akcent-color-blue-dark);
+    }
+  }
+  .roadmap-item:last-child {
+    .circle {
+        background-color: var(--main-akcent-color-blue-dark);
+    }
+  }
+  .content {
+    .roadmap-name {
+        display: none;
+    }
+  }
+  .content h3 {
+    font-size: var(--title-h2);
+    font-weight: bold;
+    color: var(--main-dark-color);
+  }
+  
+  .content p {
+    font-size: var(--font-size-text-20);
+    color: #555;
+  }
+  
+  .roadmap-item:last-child  {
+    align-items: end;
+  }
+  .roadmap-name {
+    color: var(--main-akcent-color-blue-dark);
+    font-size: var(--title-h2);
+    width: 176px;
+    font-weight: 700;
+  }
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 991px ) {
+    article {
+        width: 100%;
+    }
+    .crumbs-date {
+        width: 100%;
+    }
+    .projects-wrapp-articles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .roadmap-name {
+        display: none;
+    }
+    .content .roadmap-name {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .roadmap::after {
+        left: 12px;
+    }
+}
+@media (max-width: 767px) {
+    .projects-card {
+        width: 265px;
+    }
+    .circle {
+        flex-shrink: 0
+    }
+}
+@media (max-width: 575px) {
+    article {
+        margin-top: var(--margin-60);
+        div, p, h2, h3, h4, span, a, ul, li {
+            line-height: 25px;
+            margin-bottom: var(--margin-30);
+        }
+    }
+    .projects-card {
+        width: 100%;
+    }
+    .crumbs-wrapp {
+        flex-wrap: wrap;
+    }
+    .roadmap-item {
+        gap: 15px;
+    }
+    .content h3 {
+        font-size: 15px;
+    }
+    .content .roadmap-name {
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 375px) {
+
+}

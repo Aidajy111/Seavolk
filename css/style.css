@@ -1,0 +1,241 @@
+
+body {
+    background: var(--main-white-bg);
+}
+.ui-kit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.ui-kit .black-bg {
+    padding: 30px;
+    background: var(--main-dark-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* Стили для кнопок */
+.btn {
+    padding: 15px 60px;
+    height: 48px;
+    border-radius: 5px;
+    background: var(--main-dark-color);
+    color: var(--main-white-bg);
+    text-transform: uppercase;
+    font-size: 15px;  
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    border: 1px solid var(--main-dark-color);
+}
+.btn:hover {
+    background: transparent;
+    color: var(--main-dark-color);
+}
+.btn.blue {
+    background: var(--main-akcent-color-blue-dark);
+    border: 1px solid var(--main-akcent-color-blue-dark);
+}
+.btn.blue:hover {
+    background: transparent;
+    color: var(--main-akcent-color-blue-dark);
+}
+.btn-arrow {
+    display: inline-flex;
+    transition: 0.7s;
+}
+.btn-arrow .arrows {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--main-dark-color);
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    position: relative;
+    overflow: hidden;
+}
+.btn-arrow:hover .btn {
+    background: var(--main-dark-color);
+    color: var(--main-white-bg);
+}
+.btn-arrow .arrows::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--main-dark-color);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.7s;
+    z-index: 1;
+}
+.btn-arrow:hover .arrows::before {
+    transform: scale(1.1);
+}
+.btn-arrow .arrows path {
+    transition: 0.7s;
+}
+.btn-arrow .arrows svg {
+    position: relative;
+    z-index: 3;
+}
+.btn-arrow:hover .arrows svg path {
+    fill: var(--main-white-bg) !important;
+}
+.btn-arrow:hover .arrows svg {
+    transition: 0.7s;
+}
+.btn-arrow:hover .arrows svg {
+    transform: rotate(360deg);
+}
+.black-bg .btn {
+    background: var(--main-white-bg);
+    color: var(--main-dark-color);
+}
+.black-bg .btn-arrow .arrows {
+    border: 1px solid var(--main-white-bg);
+}
+.black-bg .btn-arrow .arrows svg path {
+    fill: var(--main-white-bg) !important;
+}
+.black-bg:hover .btn {
+    background: var(--main-white-bg);
+    color: var(--main-dark-color);
+    border: 1px solid var(--main-white-bg);
+}
+.black-bg .btn-arrow .arrows::before {
+    background: var(--main-white-bg) !important;
+    z-index: 1;
+}
+.black-bg .btn-arrow:hover .arrows svg path {
+    fill: var(--main-dark-color) !important;
+}
+
+/* Стили для интутов */
+
+.black-bg input {
+    height: 48px;
+    border-radius: 5px;
+    background: var(--main-input-bg);
+    border: 1px solid var(--main-input-bg);
+    color: var(--main-white-bg);
+    border: none;
+    padding: 15px;
+    font-weight: 300;
+    font-size: 15px;
+    border: 1px solid var(--main-input-bg);
+}
+.black-bg input:focus {
+    outline: none;
+    border: 1px solid var(--description-text-in-white);
+}
+.inpits-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+}
+label {
+    color: #707070;
+    font-size: 12px;
+}
+.black-bg textarea {
+    height: 90px;
+    border-radius: 5px;
+    background: var(--main-input-bg);
+    border: 1px solid var(--main-input-bg);
+    color: var(--main-white-bg);
+    border: none;
+    padding: 15px;
+    font-weight: 300;
+    font-size: 15px;
+    border: 1px solid var(--main-input-bg);
+}
+.black-bg textarea:focus {
+    outline: none;
+    border: 1px solid var(--description-text-in-white);
+}
+textarea {
+    height: 90px;
+    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #FFFFFF;
+    color: var(--main-dark-color);
+    border: none;
+    padding: 15px;
+    font-weight: 300;
+    font-size: 15px;
+    border: 1px solid #FFFFFF;
+    resize: none;
+    font-family: "Montserrat";
+}
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--description-text-in-white);
+}
+input {
+    height: 48px;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid var(--main-input-bg);
+    color: var(--main-dark-color);
+    border: none;
+    padding: 15px;
+    font-weight: 300;
+    font-size: 15px;
+    border: 1px solid #fff;
+    width: 100%;
+    font-family: "Montserrat";
+}
+input:focus {
+    outline: none;
+    border: 1px solid var(--description-text-in-white);
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    a.btn-arrow {
+        .arrows {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}

@@ -1,0 +1,516 @@
+.crumbs-wrapp.norm {
+    margin-top: var(--margin-30);
+}
+.contact-wrapp {
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+}
+.contact-wrapp__card-contact {
+    padding: 30px;
+    border-radius: 17px 80px 17px 17px;
+    background: #fff;
+    width: 370px;
+    height: 257px;
+    position: relative;
+    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    top: -20px;
+    .icon {
+        width: 117px;
+        height: 117px;
+        border-radius: 50%;
+        background: var(--main-akcent-color-blue-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        cursor: pointer;
+        top: -20px;
+        img {
+            width: 66px;
+            height: 66px;
+        }
+    }
+    .title {
+        font-weight: 700;
+        color: var(--main-dark-color);
+        margin-bottom: 10px;
+        font-size: var(--font-size-text-20);
+        text-align: center;
+    }
+    .text {
+        font-size: var(--font-size-text-20);
+        color: var(--description-text-in-white);
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    &:hover {
+        .icon {
+            background: var(--support-blue-color);
+        }
+    }
+}
+.map {
+    width: 100%;
+    height: 420px;
+    border-radius: 17px;
+    background: var(--main-akcent-color-blue-dark);
+    margin-top: var(--margin-30);
+}
+
+// Style careers page
+
+.vacancy-wrapp {
+    margin-top: 60px;
+}
+.vacancy-wrapp__advantages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--margin-30);
+}
+.advantages-card {
+    border-top: 1px solid var(--main-dark-color);
+    border-left: 1px solid var(--main-dark-color);
+    border-right: 1px solid var(--main-dark-color);
+    border-radius: 17px 80px 0 0;
+    padding: 15px 30px 0px  15px;
+    display: flex;
+    width: 370px;
+    align-items: center;
+    margin-top: 15px;
+    .advantages-card_icon {
+        width: 70px;
+        height: 70px;
+        background: var(--main-akcent-color-blue-dark);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+        img {
+            width: 39px;
+            height: 39px;
+        }
+    }
+    .advantages-card__text {
+        font-weight: 700;
+        color: var(--main-dark-color);
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+.vacancy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 0 0px 0;
+    &__card {
+      background: #fff;
+      border-radius: 17px;
+      padding: 20px;
+      overflow: hidden;
+      transition: 0.5s;
+      &__queshion-wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .queshion-btn {
+          width: 34px;
+          height: 34px;
+          display: flex;
+          cursor: pointer;
+          transform: rotate(45deg);
+          transition: 0.4s;
+          &.active {
+            transform: rotate(0deg);
+          }
+        }
+        .queshion-btn::before {
+          content: "";
+          background: url('../img/icon/close-queshion.svg') no-repeat center center;
+          width: 34px;
+          height: 34px;
+        }
+      }
+      .queshion-answer {
+        overflow: hidden;
+        height: 0;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &.active {
+          height: 10px;
+          height: auto;
+          margin-top: 15px;
+        }
+        li, p, div {
+            font-weight: 300;
+            font-size: var(--size-20-px);
+            color: var(--small-text-dark-color);
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-left: 20px;
+            li {
+                font-weight: 300;
+                font-size: var(--size-20-px);
+                color: var(--small-text-dark-color);
+                list-style: circle;
+            }
+        }
+      }
+    }
+  }
+  .vacancy__card__queshion-wrapp__text {
+    font-weight: 700;
+    color: var(--small-text-dark-color);
+    font-size: var(--size-20-px);
+  }
+  .question-text-vacancy {
+    max-width: 496px;
+    .question-text__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p {
+            text-transform: lowercase;
+            color: var(--description-text-in-dark);
+        }
+    }
+  }
+
+// Style page Company
+
+.our-mission {
+    display: flex;
+    gap: 30px;
+    .our-mission__text-wrapp {
+        font-size: var(--font-size-text-20);
+        color: var(--small-text-dark-color);
+        width: 570px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .our-mission__image-wrapp {
+        display: grid;
+        gap: 15px;
+        width: 570px;
+    }
+    .our-mission__image-wrapp__top {
+        display: flex;
+        gap: 15px;
+
+    }
+    .our-mission__image-wrapp__image {
+        background: #084dbd;
+        border-radius: 17px;
+        height: 230px;
+        width: 100%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.7s;
+        }
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+.our-mission.secound {
+    flex-direction: row-reverse;
+}
+.precentetion-wrapper {
+    margin-top: 60px;
+    .precentetion-slider {
+        .slick-list {
+            height: 580px;
+            width: 970px;
+        }
+        &.services-slid {
+            justify-content: center;
+        }
+        .slick-arrow.slick-prev {
+            left: 0;
+        }
+        .slick-arrow.slick-next {
+            right: 0;
+        }
+    }
+    .slick-dots {
+        right: 44%;
+    }
+}
+.precentetion-item {
+    width: 970px;
+    height: 580px;
+    border-radius: 17px;
+    background: #9F9F9F;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.leaders {
+    background: var(--main-dark-color);
+    padding: 60px 0;
+    margin: 60px 0;
+    .secound-title {
+        color: var(--main-white-bg);
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p {
+            text-align: center;
+        }
+        .leaders-text {
+            color: var(--description-text-in-dark);
+            width: 100%;
+        }
+        .leader-main-text {
+            display: flex;
+            flex-direction: column;
+            width: 525px;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: var(--margin-30);
+        }
+    }
+}
+.leader-wrapper {
+    display: flex;
+    gap: 30px;
+    .leader-card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+        width: 370px;
+        padding-top: 30px;
+        &__profil {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: #474747;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .leader-card__data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__name {
+                font-size: var(--font-size-text-20);
+                color: var(--main-white-bg);
+                font-weight: 700;
+            }
+            &__post {
+                font-size: var(--font-size-text-20);
+                color: var(--description-text-in-dark);
+                margin-bottom: 15px;
+            }
+            .footer-link-wrapp__contact__wrapp__messenger {
+                gap: 20px;
+                display: flex;
+            }
+        }
+        &::after {
+            content: "";
+            border-top: 1px solid var(--main-white-bg);
+            border-left: 1px solid var(--main-white-bg);
+            border-right: 1px solid var(--main-white-bg);
+            height: 150px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-radius: 17px 80px 0 0;
+        }
+    }
+}
+
+
+@media (max-width: 1170px ) {
+    .leader-wrapper {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 991px ) {
+    .contact-wrapp {
+        column-gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .contact-wrapp__card-contact {
+        width: 360px;
+        height: 227px;
+    }
+    .our-mission {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        &.secound {
+            margin-top: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .precentetion-wrapper .precentetion-slider .slick-list {
+        width: 90%;
+        height: 380px;
+    }
+    .precentetion-item {
+        height: 380px;
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .our-mission .our-mission__text-wrapp {
+        width: 100%;
+    }
+    .our-mission .our-mission__image-wrapp {
+        width: 100%;
+    }
+    .precentetion-wrapper .precentetion-slider .slick-list {
+        width: 100%;
+        height: 280px;
+    }
+    .precentetion-item {
+        height: 280px;
+        width: 100%;
+    }
+    .our-mission {
+        .slick-dots {
+            display: none !important;
+        }        
+    }
+
+}
+@media (max-width: 575px) {
+    .contact-wrapp__card-contact {
+        height: 210px;
+    }
+    .our-mission .our-mission__image-wrapp__top {
+        flex-direction: column;
+    }
+    .precentetion-wrapper .precentetion-slider .slick-list {
+        width: 100%;
+        height: 230px;
+    }
+    .precentetion-item {
+        height: 230px;
+        width: 100%;
+    }
+    .leaders .container .leader-main-text {
+        width: 100%;
+    }
+    .leader-wrapper .leader-card {
+        width: 100%;
+    }
+    .precentetion-wrapper {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 375px) {
+    .contact-wrapp__card-contact {
+        width: 100%;
+        height: 150px;
+        border-radius: 80px 80px 17px 17px;
+        padding: 15px;
+    }
+    .contact-wrapp__card-contact .icon {
+        width: 70px;
+        height: 70px;
+        img {
+            width: 60%;
+            height: auto;
+        }
+    }
+    .map {
+        height: 220px;
+    }
+    .advantages-card {
+      width: 100%;  
+    } 
+    .advantages-card .advantages-card__text {
+        font-size: 15px;
+    }
+    .advantages-card {
+        padding: 10px 20px 0 10px;
+        border-radius: 17px 50px 0 0;
+    }
+    .advantages-card .advantages-card_icon {
+        width: 50px;
+        height: 50px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .vacancy-wrapp {
+        margin-top: 30px;
+       
+    }
+    .vacancy__card {
+        padding: 15px 10px;
+    }
+    .queshion-answer {
+        gap: 10px;
+        li, p, div {
+            font-weight: 300;
+            font-size: 12px;
+        }
+        ul {
+            gap: 10px;
+            padding-left: 10px;
+            li {
+                font-size: 12px;
+            }
+        }
+    }
+    .vacancy__card__queshion-wrapp .queshion-btn {
+        width: 24px;
+        height: 24px;
+    }
+    .vacancy__card__queshion-wrapp .queshion-btn::before {
+        width: 20px;
+        height: 20px;
+    }
+    .question-text-vacancy .question-text__text p {
+        text-align: center;
+    }
+}
